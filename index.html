@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Walima Invitation — Hafiz Sami Ullah & Iqra Rehman</title>
+<meta name="description" content="You are invited to the Walima ceremony of Hafiz Sami Ullah & Iqra Rehman on Sunday, 20 December 2026 at Unique Palace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #FBF6EE;
+  --ivory: #F5EDE0;
+  --gold: #C9A227;
+  --gold-bright: #E8C547;
+  --burgundy: #7A1E2E;
+  --deep-red: #5C1520;
+  --maroon: #8B2E3A;
+  --ink: #3A2A2A;
+  --muted: #8A7060;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--ivory);
+  color: var(--ink);
+  line-height: 1.65;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown-section {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #F5EDE4;
+  margin: 0;
+}
+
+.countdown-kicker {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #C9A66B;
+  margin-bottom: 1.2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: #5C1A24;
+  color: #FBF6F0;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  min-width: 72px;
+  box-shadow: 0 4px 16px rgba(92, 26, 36, 0.15);
+}
+
+.time-box .number {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #C9A66B;
+}
+
+.time-box .label {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-top: 0.35rem;
+  color: #E8D5C4;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  font-weight: 500;
+  color: var(--burgundy);
+  margin-bottom: 0.8rem;
+}
+
+.gold-line {
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1rem auto;
+}
+
+.verse { background: linear-gradient(165deg, #b78a5f 0%, #b78a5f 40%, #5C1520 100%); }
+.arabic {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.45rem, 4vw, 1.9rem);
+  line-height: 2.3;
+  direction: rtl;
+  margin: 1.4rem 0 1rem;
+  color: var(--deep-red);
+}
+.translation {
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 0 auto 0.8rem;
+  color: #FBF6F0;
+}
+.reference {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--gold);
+}
+
+.schedule { background: var(--cream); }
+.events {
+  max-width: 480px;
+  margin: 1.5rem auto 0;
+  text-align: left;
+}
+.event {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1.2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.25);
+}
+.event:last-child { border-bottom: none; }
+.event-time {
+  font-weight: 600;
+  color: var(--burgundy);
+  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+}
+.event-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--deep-red);
+}
+.event-detail { font-size: 0.92rem; color: var(--muted); }
+
+.closing {
+  background: linear-gradient(160deg, #5C1520 0%, #7A1E2E 100%);
+  color: #FBF6EE;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 1.5rem;
+}
+.closing .names {
+  color: #FBF6EE;
+  font-size: clamp(1.9rem, 5.5vw, 2.8rem);
+  font-family: "Love Light", cursive;
+  font-weight: 500;
+}
+.blessing {
+  font-style: italic;
+  font-size: 1.15rem;
+  max-width: 460px;
+  color: #F5EDE0;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .event { grid-template-columns: 1fr; gap: 0.2rem; }
+  section { padding: 3rem 1.25rem; }
+  .time-box { min-width: 64px; padding: 0.8rem 0.9rem; }
+  .time-box .number { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<img src="New Project (1) (1).jpg" alt="Walima Invitation" class="hero-img">
+
+<section class="verse">
+  <div class="fade-up">
+    <p class="arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</p>
+    <p class="translation">“And among His signs is that He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy. Indeed, in that are signs for a people who reflect.”</p>
+    <p class="reference">— Surah Ar-Rum 30:21</p>
+  </div>
+</section>
+
+<section class="schedule">
+  <div class="fade-up">
+    <p class="section-title">Schedule of Events</p>
+    <div class="gold-line"></div>
+    <div class="events">
+      <div class="event">
+        <div class="event-time">6:30 PM</div>
+        <div>
+          <div class="event-name">Guest Arrival</div>
+          <div class="event-detail">Reception begins</div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-time">7:30 PM</div>
+        <div>
+          <div class="event-name">Walima Dinner</div>
+          <div class="event-detail">Celebratory feast</div>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-time">9:30 PM</div>
+        <div>
+          <div class="event-name">Evening Close</div>
+          <div class="event-detail">Dua & departure</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<img src="New Project (1) (2).jpg" alt="December Calendar" class="hero-img">
+
+<section class="countdown-section">
+  <p class="countdown-kicker">The Celebration Begins In</p>
+  <div class="countdown" id="countdown">
+    <div class="time-box">
+      <span class="number" id="days">00</span>
+      <span class="label">Days</span>
+    </div>
+    <div class="time-box">
+      <span class="number" id="hours">00</span>
+      <span class="label">Hours</span>
+    </div>
+    <div class="time-box">
+      <span class="number" id="minutes">00</span>
+      <span class="label">Minutes</span>
+    </div>
+    <div class="time-box">
+      <span class="number" id="seconds">00</span>
+      <span class="label">Seconds</span>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <p class="kicker" style="color: var(--gold);">With gratitude & blessings</p>
+  <div class="gold-line"></div>
+  <h2 class="names">Hafiz Sami Ullah<br><span class="amp" style="font-size:1.6rem;">&</span><br>Iqra Rehman</h2>
+  <p class="blessing">May Allah bless their union with love, tranquility, and lasting mercy.</p>
+  <p style="margin-top: 1.2rem; letter-spacing: 0.16em; font-size: 0.78rem; opacity: 0.75;">20 · 12 · 2026</p>
+</section>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const weddingDate = new Date('December 20, 2026 18:00:00').getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+    if (distance < 0) {
+      document.getElementById('countdown').innerHTML =
+        '<p style="font-family:Great Vibes,cursive;font-size:1.8rem;color:#5C1A24;">The celebration has begun</p>';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysEl.textContent = String(days).padStart(2, '0');
+    hoursEl.textContent = String(hours).padStart(2, '0');
+    minutesEl.textContent = String(minutes).padStart(2, '0');
+    secondsEl.textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+});
+</script>
+</body>
+</html>
